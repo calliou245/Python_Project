@@ -7,18 +7,19 @@ def begin_story():
   user_response= int(input("1.Call over the radio asking for help. \n 2.Push the pilot out of the way and try to fly the plane yourself."))
   decision1(user_response)
   
-
+#aperson2nice - fixed the problem with this function
 def decision1(user_response):
   print("select 1 or 2")
   if user_response == 1:
     print("No one replied in time. The plane went down and unfortunatley you did not survive.")
+    user_response = int(input())
     loser()
   elif user_response == 2:
     print("The pilot was strapped down in seatbelts.")
     print("What do you do?")
+    user_response = int(input())
     decision2()
-  
-  user_response = int(input())
+    
 def decision2():
   print("1.Cut the seatbelts with a knife you have strapped to your belt \n 2. Press the button to release the seatbelts like a normal person")
   if (user_response == 1):
