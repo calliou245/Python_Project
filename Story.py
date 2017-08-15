@@ -1,4 +1,6 @@
 user_response = 0
+
+#- This function is what starts the entire story/game
 def begin_story():
   print("You were in a private plane flying over the jungles in africa when all of a sudden your pilot has a heart attack. The plane is rapidly dropping.")
   print("What do you do?")
