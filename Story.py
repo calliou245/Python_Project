@@ -12,43 +12,45 @@ def decision1(user_response):
   print("select 1 or 2")
   if user_response == 1:
     print("No one replied in time. The plane went down and unfortunatley you did not survive.")
-    user_response = int(input())
     loser()
   elif user_response == 2:
     print("The pilot was strapped down in seatbelts.")
     print("What do you do?")
-    user_response = int(input())
     decision2()
+    
     
 def decision2():
   print("1.Cut the seatbelts with a knife you have strapped to your belt \n 2. Press the button to release the seatbelts like a normal person")
+  user_response = int(input())
   if (user_response == 1):
     decision3a()
   elif(user_response == 2):
     decision3b()
     
-    user_response = int(input())
 def decision3a():
+  user_response = int(input())
   print("You cut the strap and the pilot is now on the floor but while doing so you slashed your arm.")
   print("1.Apply first aid to the wound \n 2. Try and fly the plane.")
   decision4a()
   
-  user_response = int(input())
+
 def decision4a():
+  user_response = int(input())
   if(user_response == 1):
     decision4ab()
   elif(user_response == 2):
     decision4aa()
     
-    user_response = int(input())
+  
 def decision4aa():
   print("The plane is going down you grab the yoke")
   print("what do you do?")
   print("1.Push the yoke down.\n 2.Pull yoke up.")
   decision5()
   
-  user_response = int(input())
+  
 def decision5():
+  user_response = int(input())
   if(user_response == 1 ):
     print("The plane crashes down too fast and you die in a horrible crash")
     loser()
@@ -61,8 +63,9 @@ def flying():
   print("1.Call over radio for any help. \n 2.Try and look for a place to land \n 3.Look for a place to crash land.")
   decision6()
   
-  user_response = int(input())
+  
 def decision6():
+  user_response = int(input())
   if (user_response == 1):
     print("No one replies and you lost hope so you crash nose down into the earth.")
     loser()
@@ -78,8 +81,9 @@ def crash():
   print("1. Scavage plane for any materials \n 2. Get out of the plane.")
   decision7()
 
-  user_response = int(input())
+
 def decision7():
+  user_response = int(input())
   if(user_response == 1):
     print("The plane blows up while you are in it. You die.")
     loser()
@@ -91,8 +95,9 @@ def woods():
   print("1.Leave crash site and look for food and water. \n 2. Stay put and hope to be found.")
   decision8()
   
-  user_response = int(input())
+
 def decision8():
+  user_response = int(input())
   if(user_response == 1):
     food()
   elif(user_response == 2):
@@ -104,8 +109,9 @@ def food():
   print("1.Get the berries and eat them. \n 2.Try and climb the tree.")
   decision9()
   
-  user_response = int(input())
+  
 def decision9():
+  user_response = int(input())
   if(user_response ==1):
     print("The berries were ended up poisonus you were found by a rescue helicopter but unfortuanitly they were not able to deal with the poison in time.")
     loser()
@@ -125,8 +131,9 @@ def decision3b():
   print("1.Try and fly the plane. \n 2. Try to save the piolt.")
   decision4b()
 
-  user_response = int(input())
+
 def decision4b():
+  user_response = int(input())
   if(user_response == 1):
     decision4aa()
   elif(user_response == 2):
